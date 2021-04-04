@@ -1,0 +1,91 @@
+.game-container {
+  background-image: url(../../assets/bg.jpeg);
+  background-size: cover;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.game-board {
+  background: #fff;
+  padding: 30px;
+  border-radius: 17.5186px;
+  min-width: 500px;
+}
+
+.board-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.animated-progress {
+  width: 162.79px;
+  height: 18.04px;
+  margin: 20px 10px;
+  background: linear-gradient(180deg, #853594 47.39%, #692789 47.4%);
+  border: 2.15507px solid #532461;
+  overflow: hidden;
+  position: relative;
+  border-top-right-radius: 12.661px;
+  border-bottom-right-radius: 12.661px;
+
+  span {
+    height: 100%;
+    display: block;
+    color: rgb(255, 251, 251);
+    line-height: 30px;
+    position: absolute;
+    text-align: end;
+    padding-right: 5px;
+  }
+}
+
+.progress-red span {
+  background: linear-gradient(180deg, #f07cc3 44.27%, #c5418e 44.28%);
+  border: 1.87639px solid #fffffd;
+  border-top-right-radius: 11.0238px;
+  border-bottom-right-radius: 11.0238px;
+}
+
+.life-container {
+  position: relative;
+  width: 173px;
+}
+
+.heart {
+  position: absolute;
+  z-index: 10;
+  top: 10px;
+  left: -10px;
+}
+
+.board-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid-container {
+  border: 2.46869px solid #853594;
+  cursor: pointer;
+  display: grid;
+  grid-gap: 0em;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+:root {
+  --grid-cols: 1;
+  --grid-rows: 1;
+}
+
+.grid-item {
+  padding: 1em;
+  text-align: center;
+  border: 1px solid #853594;
+}

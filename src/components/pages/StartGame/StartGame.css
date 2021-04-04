@@ -1,0 +1,33 @@
+body {
+  background-color: #43144a;
+  /* margin: auto; */
+  margin-top: 60px;
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  text-align: center;
+  padding: 0 50px;
+}
+h1 {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 77px;
+  color: #ffc700;
+}
+
+h4 {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #cbcbff;
+}
+.img {
+  object-fit: cover;
+  width: 100%;
+}
